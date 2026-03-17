@@ -42,6 +42,9 @@
 
     -   *Tip:* Don't just list the project's features. Isolate *your* contribution. If the app had a Login, Database, and UI, and you only built the Login... write about the Login. This sets you up for success in the interview.
 
+-   **Front-Load Your Skills:** Place your technical and professional skills near the very top of your resume, right after the Professional Summary. Do not hide them at the bottom.
+    -   *Space-Saving Hack:* Merge your Tech Skills and Professional Skills into a single, consolidated "Skills" section. This frees up valuable space for explaining your projects and experiences.
+
 🔄 The Pivot: Specific Role Translations
 ----------------------------------------
 
