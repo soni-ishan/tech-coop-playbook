@@ -71,6 +71,6 @@
 ⚠️ A Note on Phone Numbers
 --------------------------
 
--   **My original opinion:** "Don't write your phone number."
+-   **My original opinion:** "I prefer not to include my phone number for privacy, but be aware most standard templates require it."
 
 -   **The Reality:** The University Co-op Office **requires** it, and local Regina employers still like to call. I have conceded this point in the `RESUME_LINTER.md`. Include it, but make sure your voicemail is professional.
