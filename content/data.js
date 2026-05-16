@@ -2,7 +2,7 @@ const DATA = {
   bullets: {
     csCore: [
       {
-        course: "CS 110/115 — Intro to Programming & OOP",
+        course: "CS 110/115: Intro to Programming & OOP",
         target: "Software Developer / Engineer",
         angles: [
           {
@@ -21,7 +21,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 201/301 — Digital Systems & Architecture",
+        course: "CS 201/301: Digital Systems & Architecture",
         target: "Embedded / Systems Engineer",
         angles: [
           {
@@ -40,7 +40,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 210/340 — Data Structures & Algorithms",
+        course: "CS 210/340: Data Structures & Algorithms",
         target: "Software Engineer / Interview Prep",
         angles: [
           {
@@ -60,7 +60,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 215 — Web & Database Programming",
+        course: "CS 215: Web & Database Programming",
         target: "Full Stack / Backend Developer",
         angles: [
           {
@@ -79,7 +79,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 335 — Computer Networks",
+        course: "CS 335: Computer Networks",
         target: "Network / Infrastructure Engineer",
         angles: [
           {
@@ -99,7 +99,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 350 — Programming Language Concepts",
+        course: "CS 350: Programming Language Concepts",
         target: "Compiler / Language Engineer",
         angles: [
           {
@@ -118,7 +118,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 372 — Software Engineering Methodology",
+        course: "CS 372: Software Engineering Methodology",
         target: "Software Engineer / Project Lead",
         angles: [
           {
@@ -134,7 +134,7 @@ const DATA = {
 
     csElectives: [
       {
-        course: "CS 207 — Building Interactive Gadgets",
+        course: "CS 207: Building Interactive Gadgets",
         target: "Embedded Systems / IoT Engineer",
         angles: [
           {
@@ -147,7 +147,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 320/421 — Artificial Intelligence (Intro & Adv)",
+        course: "CS 320/421: Artificial Intelligence (Intro & Adv)",
         target: "ML Engineer / Data Scientist",
         angles: [
           {
@@ -166,7 +166,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 412 — Algorithm Analysis",
+        course: "CS 412: Algorithm Analysis",
         target: "Software Engineer / R&D",
         angles: [
           {
@@ -179,7 +179,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 425 — Image Processing",
+        course: "CS 425: Image Processing",
         target: "Computer Vision Engineer",
         angles: [
           {
@@ -192,7 +192,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 428 — Human Computer Communications",
+        course: "CS 428: Human Computer Communications",
         target: "UI/UX Engineer / Frontend Dev",
         angles: [
           {
@@ -205,7 +205,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 458 — Virtual & Augmented Reality",
+        course: "CS 458: Virtual & Augmented Reality",
         target: "VR/AR Developer / Game Dev",
         angles: [
           {
@@ -218,7 +218,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 476 — Software Development Project (Capstone)",
+        course: "CS 476: Software Development Project (Capstone)",
         target: "Full Stack Developer / Software Engineer",
         angles: [
           {
@@ -232,7 +232,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 490DJ — Topics in Cybersecurity",
+        course: "CS 490DJ: Topics in Cybersecurity",
         target: "Cyber Analyst / Security Engineer",
         angles: [
           {
@@ -249,7 +249,7 @@ const DATA = {
 
     mathStat: [
       {
-        course: "MATH 110/111 — Calculus I & II",
+        course: "MATH 110/111: Calculus I & II",
         target: "Data Science / Engineering",
         angles: [
           {
@@ -262,7 +262,7 @@ const DATA = {
         ]
       },
       {
-        course: "MATH 122 — Linear Algebra",
+        course: "MATH 122: Linear Algebra",
         target: "Data Science / ML / Graphics",
         angles: [
           {
@@ -281,7 +281,7 @@ const DATA = {
         ]
       },
       {
-        course: "STAT 160/252 — Intro to Stats & Probability",
+        course: "STAT 160/252: Intro to Stats & Probability",
         target: "Data Analyst / QA Engineer",
         angles: [
           {
@@ -303,7 +303,7 @@ const DATA = {
 
     survivalJobs: [
       {
-        course: "Food Service — Server, Barista, Fast Food",
+        course: "Food Service: Server, Barista, Fast Food",
         target: "Data / FinTech / Engineering Roles",
         angles: [
           {
@@ -323,7 +323,7 @@ const DATA = {
         ]
       },
       {
-        course: "Retail & Sales — Cashier, Stock, Sales Associate",
+        course: "Retail & Sales: Cashier, Stock, Sales Associate",
         target: "Data Analyst / IT Support / Help Desk",
         angles: [
           {
@@ -343,7 +343,7 @@ const DATA = {
         ]
       },
       {
-        course: "General Labor — Warehouse, Construction",
+        course: "General Labor: Warehouse, Construction",
         target: "Engineering / DevOps",
         angles: [
           {
@@ -373,23 +373,23 @@ const DATA = {
 
   linter: {
     fatal: [
-      { text: "Cover Sheet included — the mandatory Resume Cover Sheet for Career Connect.", tag: "UNIVERSITY" },
+      { text: "Cover Sheet included: the mandatory Resume Cover Sheet for Career Connect.", tag: "UNIVERSITY" },
       { text: "File named exactly: Firstname_Lastname_JobTitle.pdf", tag: "FILE NAME" },
-      { text: "Exported as PDF — not a Word document.", tag: "FORMAT" },
-      { text: "Single-column layout — no columns, text boxes, or graphics (ATS parsers reject them).", tag: "ATS" }
+      { text: "Exported as PDF, not a Word document.", tag: "FORMAT" },
+      { text: "Single-column layout. No columns, text boxes, or graphics (ATS parsers reject them).", tag: "ATS" }
     ],
     warnings: [
-      { text: '"References available upon request" removed — it wastes space, recruiters ask later.', tag: "CONTENT" },
-      { text: "Phone number included — required by the University Co-op Office.", tag: "CONTACT" },
-      { text: "LinkedIn and GitHub are full, clickable hyperlinks — not plain text.", tag: "LINKS" },
-      { text: "Full street address removed — City, Province is sufficient.", tag: "PRIVACY" },
-      { text: "Relevant Coursework tweaked for this specific role — not a static list.", tag: "TAILORING" },
-      { text: "Final spell check complete — typos are an immediate rejection.", tag: "QUALITY" }
+      { text: '"References available upon request" removed. It wastes space; recruiters ask later.', tag: "CONTENT" },
+      { text: "Phone number included. Required by the University Co-op Office.", tag: "CONTACT" },
+      { text: "LinkedIn and GitHub are clickable hyperlinks, not plain text URLs.", tag: "LINKS" },
+      { text: "Full street address removed. City, Province is sufficient.", tag: "PRIVACY" },
+      { text: "Relevant Coursework tweaked for this specific role, not a static list.", tag: "TAILORING" },
+      { text: "Final spell check complete. Typos are an immediate rejection.", tag: "QUALITY" }
     ],
     style: [
-      { text: "Length: 1 page max (Starter) or 1.5 pages max (Veteran).", tag: "LENGTH" },
-      { text: "Margins: 0.5–0.75″ — narrow but readable.", tag: "MARGINS" },
-      { text: "Font: Aptos, Calibri, or Roboto at 10–12pt — no Times New Roman.", tag: "FONT" },
+      { text: "Length: 1 page maximum. Never exceed one page.", tag: "LENGTH" },
+      { text: "Margins: 0.5–0.75 inches, narrow but readable.", tag: "MARGINS" },
+      { text: "Font: Aptos, Calibri, or Roboto at 10–12pt. No Times New Roman.", tag: "FONT" },
       { text: "Subtle accent color on section headers (dark blue or dark green recommended).", tag: "COLOR" }
     ]
   },
@@ -413,18 +413,7 @@ const DATA = {
     {
       title: "The Cold Email Architect",
       description: "Generate a LinkedIn message that gets replies without begging for a job.",
-      text: "I want to reach out to a [Role, e.g., Senior Developer] at [Company] via LinkedIn.\n\nMy Goal: I want to ask about their team’s tech stack — NOT ask for a job directly.\n\nMy Background: I am a CS student at the University of Regina interested in [Specific Tech/Domain].\n\nTask: Draft a 50-word message that is polite, specific, and asks a smart technical question to start a real conversation. Do not sound desperate. Do not use a template greeting."
+      text: "I want to reach out to a [Role, e.g., Senior Developer] at [Company] via LinkedIn.\n\nMy Goal: I want to ask about their team's tech stack, NOT ask for a job directly.\n\nMy Background: I am a CS student at the University of Regina interested in [Specific Tech/Domain].\n\nTask: Draft a 50-word message that is polite, specific, and asks a smart technical question to start a real conversation. Do not sound desperate. Do not use a template greeting."
     }
-  ],
-
-  coverLetter: {
-    fields: [
-      { id: "company",     label: "Company Name",                   placeholder: "e.g., Vendasta Technologies" },
-      { id: "story",       label: "How You Discovered Them",        placeholder: "e.g., used their product, saw a talk, read a case study" },
-      { id: "mission",     label: "Their Mission (from About page)", placeholder: "e.g., helping local businesses compete online" },
-      { id: "requirement", label: "Top Job Requirement (from JD)",  placeholder: "e.g., experience with REST APIs and Python" },
-      { id: "skill",       label: "Your Matching Project / Skill",  placeholder: "e.g., in CS 215, I built an inventory system using MySQL..." },
-      { id: "result",      label: "Result / Metric",                placeholder: "e.g., reducing query time by 40%" }
-    ]
-  }
+  ]
 };
