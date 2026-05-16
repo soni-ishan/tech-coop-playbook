@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   buildBulletLibrary();
   buildLinter();
   buildPrompts();
-  buildCoverLetter();
   initTemplates();
 });
 
@@ -186,59 +185,6 @@ function buildPrompts() {
       copyText(prompt.text, e.currentTarget);
     });
     grid.appendChild(card);
-  });
-}
-
-// ── COVER LETTER ──────────────────────────────────────────────────
-
-function buildCoverLetter() {
-  const form    = document.getElementById("cl-form");
-  const preview = document.getElementById("cl-preview");
-  const copyBtn = document.getElementById("cl-copy");
-
-  const values = {};
-  DATA.coverLetter.fields.forEach(field => {
-    values[field.id] = "";
-
-    const group = document.createElement("div");
-    group.className = "field-group";
-    group.innerHTML = `
-      <label for="cl-${field.id}">${escapeHtml(field.label)}</label>
-      <input type="text" id="cl-${field.id}" placeholder="${escapeHtml(field.placeholder)}">
-    `;
-
-    const input = group.querySelector("input");
-    input.addEventListener("input", () => {
-      values[field.id] = input.value.trim();
-      updatePreview();
-    });
-
-    form.appendChild(group);
-  });
-
-  function updatePreview() {
-    const f = values;
-    const company     = f.company     || "[Company Name]";
-    const story       = f.story       || "[how you discovered them]";
-    const mission     = f.mission     || "[company mission]";
-    const requirement = f.requirement || "[specific requirement from JD]";
-    const skill       = f.skill       || "[your matching project or course experience]";
-    const result      = f.result      || "[result or metric]";
-
-    preview.textContent =
-`Dear Hiring Team at ${company},
-
-I first discovered ${company} when I ${story}. I was immediately drawn to your mission to ${mission}, because it aligns directly with my drive to build software that makes a measurable difference. I am excited to apply for this Co-op role because it sits at the intersection of my technical skills and this mission.
-
-In your job description, you mention a need for ${requirement}. During my time as a CS student at the University of Regina, I tackled a similar challenge when I ${skill}, which resulted in ${result}. I am confident I can bring this same rigour to ${company} and contribute to your team from day one.
-
-I would welcome the opportunity to discuss how my background can contribute to your engineering team. Thank you for your time and consideration.`;
-  }
-
-  updatePreview();
-
-  copyBtn.addEventListener("click", () => {
-    copyText(preview.textContent, copyBtn);
   });
 }
 

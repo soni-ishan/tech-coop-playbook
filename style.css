@@ -48,7 +48,7 @@ body {
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 24px;
-  height: 56px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,7 +57,7 @@ body {
 
 .nav-brand {
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 1rem;
   letter-spacing: -.01em;
   white-space: nowrap;
   color: var(--color-text);
@@ -70,11 +70,11 @@ body {
 }
 
 .nav-links a {
-  font-size: .8rem;
+  font-size: .875rem;
   font-weight: 500;
   color: var(--color-muted);
   text-decoration: none;
-  padding: 4px 10px;
+  padding: 6px 12px;
   border-radius: 6px;
   transition: color .15s, background .15s;
 }
@@ -91,7 +91,7 @@ body {
   padding: 0 24px;
 }
 
-section { padding: 72px 0; }
+section { padding: 52px 0; }
 section:nth-child(even) { background: var(--color-bg-alt); }
 
 .section-label {
@@ -113,13 +113,13 @@ section:nth-child(even) { background: var(--color-bg-alt); }
 .section-sub {
   font-size: 1rem;
   color: var(--color-muted);
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   max-width: 560px;
 }
 
 /* ── HERO ──────────────────────────────── */
 #hero {
-  padding: 96px 0 80px;
+  padding: 64px 0 52px;
   background: var(--color-bg);
 }
 
@@ -582,6 +582,17 @@ section:nth-child(even) { background: var(--color-bg-alt); }
 .linter-item-text { font-size: .84rem; line-height: 1.5; }
 
 /* ── AI PROMPTS ────────────────────────── */
+.prompts-notice {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  font-size: .85rem;
+  line-height: 1.65;
+  color: #78350f;
+  margin-bottom: 24px;
+}
+
 .prompts-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

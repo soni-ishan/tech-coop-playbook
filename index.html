@@ -16,7 +16,6 @@
     <nav class="nav-links" aria-label="Page sections">
       <a href="#templates">Templates</a>
       <a href="#bullets">Bullet Library</a>
-      <a href="#cover-letter">Cover Letter</a>
       <a href="#linter">Linter</a>
       <a href="#prompts">AI Prompts</a>
     </nav>
@@ -27,7 +26,7 @@
 <!-- ── HERO ─────────────────────────────────────────────────────── -->
 <section id="hero">
   <div class="container">
-    <span class="hero-eyebrow">University of Regina &mdash; CS Co-op</span>
+    <span class="hero-eyebrow">University of Regina, CS Co-op</span>
     <h1 class="hero-title">The Tech Co-op Playbook</h1>
     <p class="hero-desc">
       A Mad Libs&#8209;style resume framework. Pick a template, grab bullets for your courses,
@@ -53,7 +52,7 @@
     <p class="section-sub">
       Both templates are based on
       <a href="https://github.com/jakegut/resume" target="_blank" rel="noopener">Jake Gutierrez&rsquo;s resume template</a>
-      (MIT License) &mdash; single-column, ATS-friendly, and used by engineers at top companies.
+      (MIT License): single-column, ATS-friendly, and used by engineers at top companies.
       Open the template in Overleaf, fill in your information, and compile.
     </p>
 
@@ -65,7 +64,7 @@
         <h3>Starter</h3>
         <p>
           For first and second-year students with limited work history.
-          <strong>Projects-first layout</strong> &mdash; your coursework is your experience.
+          <strong>Projects-first layout.</strong> Your coursework is your experience.
           Use the Bullet Library below to fill in each project section.
         </p>
         <pre class="template-preview" id="starter-preview">\section{Education}
@@ -100,7 +99,7 @@
         <h3>Veteran</h3>
         <p>
           For final-year students with one or more co-op placements.
-          <strong>Experience-first layout</strong> &mdash; lead with your co-ops,
+          <strong>Experience-first layout.</strong> Lead with your co-ops,
           then projects. Includes an Algorithms row in Skills.
         </p>
         <pre class="template-preview" id="veteran-preview">\section{Education}
@@ -156,41 +155,14 @@
 </section>
 
 
-<!-- ── COVER LETTER ──────────────────────────────────────────────── -->
-<section id="cover-letter">
-  <div class="container">
-    <p class="section-label">Step 3</p>
-    <h2 class="section-title">Cover Letter Generator</h2>
-    <p class="section-sub">
-      Fill in the fields on the left. Your cover letter assembles in real time on the right.
-      The goal is to prove you actually read the job description &mdash; not to repeat your resume.
-    </p>
-
-    <div class="cl-layout">
-      <div>
-        <div id="cl-form" class="cl-form"></div>
-      </div>
-
-      <div class="cl-preview-wrap">
-        <p class="cl-preview-label">Live Preview</p>
-        <div id="cl-preview" class="cl-preview"></div>
-        <div class="cl-actions">
-          <button id="cl-copy" class="btn btn-primary btn-sm">Copy Cover Letter</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 <!-- ── LINTER ────────────────────────────────────────────────────── -->
 <section id="linter">
   <div class="container">
-    <p class="section-label">Step 4</p>
+    <p class="section-label">Step 3</p>
     <h2 class="section-title">Pre-Flight Linter</h2>
     <p class="section-sub">
       Run your resume through this checklist before submitting.
-      A Fatal Error means your application may be rejected outright &mdash; fix those first.
+      A Fatal Error means your application may be rejected outright. Fix those first.
     </p>
 
     <div class="linter-progress">
@@ -212,8 +184,16 @@
     <h2 class="section-title">AI Prompts</h2>
     <p class="section-sub">
       Stop asking ChatGPT to &ldquo;write your resume.&rdquo; That produces generic text recruiters hate.
-      Use these engineering-focused prompts as a force multiplier for your own writing.
+      Use these prompts as a starting point, then rewrite the output in your own voice.
     </p>
+
+    <div class="prompts-notice">
+      <strong>Important:</strong> Always review AI-generated output before using it. Never copy-paste directly.
+      Recruiters and hiring managers can spot AI-polished language instantly, and so can the people reading your
+      LinkedIn messages. Use these prompts to get a rough draft, then rewrite it in your own natural language,
+      add your own personality, and cut anything that sounds like it came from a robot. The goal is a message
+      that sounds like <em>you</em>, not a template.
+    </div>
 
     <div id="prompts-grid" class="prompts-grid"></div>
   </div>
@@ -226,8 +206,7 @@
     <p class="footer-title">Tech Co-op Playbook</p>
     <p>
       Built by a CS undergraduate at the University of Regina who landed 4 co-op terms.
-      This framework is a supplement to &mdash; not a replacement for &mdash; your university&rsquo;s
-      official career resources.
+      This framework is a supplement to your university&rsquo;s official career resources, not a replacement for them.
     </p>
 
     <hr class="footer-divider">
@@ -246,7 +225,7 @@
     <hr class="footer-divider">
 
     <p class="footer-bottom">
-      This project is open source &mdash;
+      This project is open source,
       <a href="https://github.com/soni-ishan/tech-coop-playbook" target="_blank" rel="noopener">
         contribute on GitHub
       </a>.
