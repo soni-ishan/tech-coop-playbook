@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Co-op Playbook</title>
+  <meta name="description" content="A Mad Libs-style resume framework for CS co-op students at the University of Regina.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand">Tech Co-op Playbook</span>
+    <nav class="nav-links" aria-label="Page sections">
+      <a href="#templates">Templates</a>
+      <a href="#bullets">Bullet Library</a>
+      <a href="#linter">Linter</a>
+      <a href="#prompts">AI Prompts</a>
+    </nav>
+  </div>
+</nav>
+
+
+<!-- ── HERO ─────────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="container">
+    <span class="hero-eyebrow">University of Regina Computer Science Co-op</span>
+    <h1 class="hero-title">The Tech Co-op Playbook</h1>
+    <p class="hero-desc">
+      A Mad Libs&#8209;style resume framework. Pick a template, grab bullets for your courses,
+      replace the <code>[brackets]</code>, and ship your application.
+    </p>
+    <p class="hero-warning">
+      &#9888;&nbsp; Do not submit a resume that still contains [brackets].
+      Every bracket is a variable you must replace with your own data.
+    </p>
+    <div class="hero-ctas">
+      <a href="#templates" class="btn btn-primary">Get Started &darr;</a>
+      <a href="#bullets" class="btn btn-secondary">Browse Bullets</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── TEMPLATES ────────────────────────────────────────────────── -->
+<section id="templates">
+  <div class="container">
+    <p class="section-label">Step 1</p>
+    <h2 class="section-title">Pick Your Template</h2>
+    <p class="section-sub">
+      Both templates are based on
+      <a href="https://github.com/jakegut/resume" target="_blank" rel="noopener">Jake Gutierrez&rsquo;s resume template</a>
+      (MIT License): single-column, ATS-friendly, and used by engineers at top companies.
+      Open the template in Overleaf, fill in your information, and compile.
+    </p>
+
+    <div class="template-grid">
+
+      <!-- Starter -->
+      <div class="template-card">
+        <span class="template-badge">Level 0</span>
+        <h3>Starter</h3>
+        <p>
+          For first and second-year students with limited work history.
+          <strong>Projects-first layout.</strong> Your coursework is your experience.
+          Use the Bullet Library below to fill in each project section.
+        </p>
+        <pre class="template-preview" id="starter-preview">\section{Education}
+  University of Regina
+  B.Sc. Computer Science | Expected May 20XX
+
+\section{Technical \& Professional Skills}
+  Languages, Tools, Concepts, Professional
+
+\section{Projects \& Research}
+  [Course / Project Name] | Stack
+  • [Bullet from Bullet Library]
+
+\section{Experience}
+  [Survival Job] | Company
+  • [Bullet from Survival Jobs tab]</pre>
+        <div class="template-actions">
+          <a href="templates/starter.tex" download class="btn btn-primary btn-sm">
+            &#8595; Download starter.tex
+          </a>
+          <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs"
+             target="_blank" rel="noopener"
+             class="btn btn-secondary btn-sm">
+            Open in Overleaf &#8599;
+          </a>
+        </div>
+      </div>
+
+      <!-- Veteran -->
+      <div class="template-card">
+        <span class="template-badge">Level 50</span>
+        <h3>Veteran</h3>
+        <p>
+          For final-year students with one or more co-op placements.
+          <strong>Experience-first layout.</strong> Lead with your co-ops,
+          then projects. Includes an Algorithms row in Skills.
+        </p>
+        <pre class="template-preview" id="veteran-preview">\section{Education}
+  University of Regina
+  B.Sc. Computer Science | Expected May 20XX
+
+\section{Technical \& Professional Skills}
+  Languages, Tools, Concepts, Algorithms
+
+\section{Professional Experience}
+  [Co-op Job Title] | Company | Dates
+  • [Action + Tool + Result]
+
+\section{Projects \& Research}
+  [Hackathon / Capstone] | Stack
+  • [Bullet from Bullet Library]</pre>
+        <div class="template-actions">
+          <a href="templates/veteran.tex" download class="btn btn-primary btn-sm">
+            &#8595; Download veteran.tex
+          </a>
+          <a href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs"
+             target="_blank" rel="noopener"
+             class="btn btn-secondary btn-sm">
+            Open in Overleaf &#8599;
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="margin-top:20px; font-size:.82rem; color:var(--color-muted);">
+      <strong>How to use:</strong> Download the <code>.tex</code> file &rarr; upload to Overleaf
+      (New Project &rarr; Upload) &rarr; fill in every <code>[bracket]</code> &rarr; compile to PDF.
+      Use the <strong>Bullet Library</strong> below to find polished bullets for each course.
+    </p>
+  </div>
+</section>
+
+
+<!-- ── BULLET LIBRARY ───────────────────────────────────────────── -->
+<section id="bullets">
+  <div class="container">
+    <p class="section-label">Step 2</p>
+    <h2 class="section-title">Bullet Library</h2>
+    <p class="section-sub">
+      Find your course, pick an angle, click <strong>Copy</strong> to grab a bullet.
+      Replace every <code>[bracket]</code> with your specific project name, tool, and metric.
+    </p>
+
+    <div id="tab-nav" class="tab-nav" role="tablist" aria-label="Bullet categories"></div>
+    <div id="tab-panels"></div>
+  </div>
+</section>
+
+
+<!-- ── LINTER ────────────────────────────────────────────────────── -->
+<section id="linter">
+  <div class="container">
+    <p class="section-label">Step 3</p>
+    <h2 class="section-title">Pre-Flight Linter</h2>
+    <p class="section-sub">
+      Run your resume through this checklist before submitting.
+      A Fatal Error means your application may be rejected outright. Fix those first.
+    </p>
+
+    <div class="linter-progress">
+      <div class="progress-bar-wrap">
+        <div id="linter-bar" class="progress-bar"></div>
+      </div>
+      <span id="linter-count" class="progress-count">0 / 0 checked</span>
+    </div>
+
+    <div id="linter-items"></div>
+  </div>
+</section>
+
+
+<!-- ── AI PROMPTS ────────────────────────────────────────────────── -->
+<section id="prompts">
+  <div class="container">
+    <p class="section-label">Bonus Tools</p>
+    <h2 class="section-title">AI Prompts</h2>
+    <p class="section-sub">
+      Stop asking ChatGPT to &ldquo;write your resume.&rdquo; That produces generic text recruiters hate.
+      Use these prompts as a starting point, then rewrite the output in your own voice.
+    </p>
+
+    <div class="prompts-notice">
+      <strong>Important:</strong> Always review AI-generated output before using it. Never copy-paste directly.
+      Recruiters and hiring managers can spot AI-polished language instantly, and so can the people reading your
+      LinkedIn messages. Use these prompts to get a rough draft, then rewrite it in your own natural language,
+      add your own personality, and cut anything that sounds like it came from a robot. The goal is a message
+      that sounds like <em>you</em>, not a template.
+    </div>
+
+    <div id="prompts-grid" class="prompts-grid"></div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <p class="footer-title">Tech Co-op Playbook</p>
+    <p>
+      Built by a CS undergraduate at the University of Regina who landed 4 co-op terms.
+      This framework is a supplement to your university&rsquo;s official career resources, not a replacement for them.
+    </p>
+
+    <hr class="footer-divider">
+
+    <p>
+      <strong style="color:#e2e8f0;">Resume Template Credit</strong><br>
+      The LaTeX templates are based on
+      <a href="https://github.com/jakegut/resume" target="_blank" rel="noopener">Jake&rsquo;s Resume</a>
+      by <a href="https://github.com/jakegut" target="_blank" rel="noopener">Jake Gutierrez</a>,
+      itself based on <a href="https://github.com/sb2nov/resume" target="_blank" rel="noopener">sb2nov/resume</a>.
+      Both are released under the
+      <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>.
+      Templates adapted with section reordering and co-op-specific guidance for UofR students.
+    </p>
+
+    <hr class="footer-divider">
+
+    <p class="footer-bottom">
+      This project is open source,
+      <a href="https://github.com/soni-ishan/tech-coop-playbook" target="_blank" rel="noopener">
+        contribute on GitHub
+      </a>.
+      &ldquo;Use this as a framework, not a guarantee. Good luck.&rdquo;
+    </p>
+  </div>
+</footer>
+
+
+<script src="content/data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

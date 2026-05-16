@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in LaTeX — Level 50: Veteran
+% Template by: Jake Gutierrez (@jakegut)
+% Source:      https://github.com/jakegut/resume
+% Based on:    https://github.com/sb2nov/resume
+% License:     MIT
+%
+% Adapted for the Tech Co-op Playbook
+% University of Regina — CS Co-op Students
+%
+% INSTRUCTIONS:
+%   Fill in every [BRACKET] with your own information.
+%   Do NOT submit a resume that still contains [brackets].
+%   Use the Bullet Library at the Tech Co-op Playbook website
+%   to find bullets for your courses and projects.
+%   List experiences most recent first.
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%--- Custom commands (do not modify) ---
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%---------------------------------------
+
+
+\begin{document}
+
+%-----------HEADING-----------
+\begin{center}
+    \textbf{\Huge \scshape [Full Name]} \\ \vspace{1pt}
+    \small
+    [Phone Number] $|$
+    \href{mailto:[your@email.com]}{\underline{[your@email.com]}} $|$
+    \href{https://linkedin.com/in/[handle]}{\underline{linkedin.com/in/[handle]}} $|$
+    \href{https://github.com/[handle]}{\underline{github.com/[handle]}} $|$
+    Regina, SK
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Regina}{Regina, SK}
+      {[Degree, e.g., Bachelor of Science -- Computer Science]}{Expected [Month Year]}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} [Tweak per role -- e.g., CS 476 -- Capstone, CS 490DJ -- Cybersecurity, CS 412 -- Algorithm Analysis]}
+        \resumeItem{\textbf{Academic Honours:} [e.g., Dean's Honour List (Fall 20XX), Scholarship Name] \textit{-- remove if none}}
+        \resumeItem{\textbf{Activities:} [e.g., Hackathon participant, Computing Students' Society exec] \textit{-- remove if none}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+% Algorithms row added for veteran level — only include algorithms you can discuss in an interview.
+\section{Technical \& Professional Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: [e.g., Python, C++, Java, SQL, JavaScript, Go]} \\
+     \textbf{Frameworks \& Tools}{: [e.g., React, FastAPI, Docker, Git, Linux, AWS]} \\
+     \textbf{Concepts}{: [e.g., REST APIs, Agile/Scrum, CI/CD, OOP, Distributed Systems]} \\
+     \textbf{Algorithms}{: [e.g., Graph Traversal, Dynamic Programming, Sorting -- only if relevant to the role]} \\
+     \textbf{Professional Skills}{: [e.g., Cross-functional Communication, Technical Documentation, Mentorship]}
+    }}
+ \end{itemize}
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+% Lead with your co-ops. Use "Action + Tool + Result" format.
+% Isolate YOUR specific contribution — interviewers will ask about it.
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {[Job Title, e.g., Software Developer Co-op]}{[Month Year] -- [Month Year]}
+      {[Company Name]}{[City, SK]}
+      \resumeItemListStart
+        \resumeItem{[Most impactful bullet first -- Action + Tool + Result]}
+        \resumeItem{[Action + Tool + Result]}
+        \resumeItem{[Action + Tool + Result]}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {[Job Title, e.g., Data Analyst Co-op]}{[Month Year] -- [Month Year]}
+      {[Company Name]}{[City, SK]}
+      \resumeItemListStart
+        \resumeItem{[Action + Tool + Result]}
+        \resumeItem{[Action + Tool + Result]}
+        \resumeItem{[Action + Tool + Result]}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% Maximum 3 projects. Prioritize those closest to the target role.
+% Hackathons, capstone, and significant side projects only.
+\section{Projects \& Research}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{[Project Name]} $|$ \emph{[Tech 1, Tech 2, Tech 3]}}{[Award or Context, e.g., 1st Place -- HackRegina 20XX]}
+          \resumeItemListStart
+            \resumeItem{[Built / Designed / Architected -- Action + Task + Result]}
+            \resumeItem{[YOUR specific contribution within the team]}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{[Project Name]} $|$ \emph{[Tech 1, Tech 2]}}{[Context, e.g., CS 476 Capstone]}
+          \resumeItemListStart
+            \resumeItem{[Action + Task + Result]}
+            \resumeItem{[Action + Task + Result]}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\end{document}
