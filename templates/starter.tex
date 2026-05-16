@@ -1,0 +1,179 @@
+%-------------------------
+% Resume in LaTeX — Level 0: Starter
+% Template by: Jake Gutierrez (@jakegut)
+% Source:      https://github.com/jakegut/resume
+% Based on:    https://github.com/sb2nov/resume
+% License:     MIT
+%
+% Adapted for the Tech Co-op Playbook
+% University of Regina — CS Co-op Students
+%
+% INSTRUCTIONS:
+%   Fill in every [BRACKET] with your own information.
+%   Do NOT submit a resume that still contains [brackets].
+%   Use the Bullet Library at the Tech Co-op Playbook website
+%   to find bullets for each of your courses and jobs.
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%--- Custom commands (do not modify) ---
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%---------------------------------------
+
+
+\begin{document}
+
+%-----------HEADING-----------
+\begin{center}
+    \textbf{\Huge \scshape [Full Name]} \\ \vspace{1pt}
+    \small
+    [Phone Number] $|$
+    \href{mailto:[your@email.com]}{\underline{[your@email.com]}} $|$
+    \href{https://linkedin.com/in/[handle]}{\underline{linkedin.com/in/[handle]}} $|$
+    \href{https://github.com/[handle]}{\underline{github.com/[handle]}} $|$
+    Regina, SK
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Regina}{Regina, SK}
+      {[Degree, e.g., Bachelor of Science -- Computer Science]}{Expected [Month Year]}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} [Tweak per role, e.g., CS 215 -- Web \& Database, CS 210 -- Data Structures, MATH 122 -- Linear Algebra]}
+        \resumeItem{\textbf{Academic Honours:} [e.g., Dean's Honour List (Fall 20XX)] \textit{-- remove this line if none}}
+        \resumeItem{\textbf{Activities:} [e.g., Computing Students' Society, MASS] \textit{-- remove this line if none}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+% Front-load your skills so recruiters see them immediately.
+% Merge Tech and Professional into one section to save space.
+\section{Technical \& Professional Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: [e.g., Python, C++, SQL, JavaScript, HTML/CSS]} \\
+     \textbf{Tools \& Frameworks}{: [e.g., Git, GitHub, Linux, React, Node.js]} \\
+     \textbf{Concepts}{: [e.g., Object-Oriented Design, Relational Databases, REST APIs]} \\
+     \textbf{Professional Skills}{: [4--5 skills you can prove, matched to the JD, e.g., Technical Communication, Agile Collaboration, Problem Solving]}
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+% If you have limited work history, your class projects ARE your experience.
+% Use the Bullet Library to find bullets for each course.
+% "You didn't do an assignment — you built a system."
+\section{Projects \& Research}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{[Course / Project Name, e.g., CS 215 -- Inventory System]} $|$ \emph{[Stack: e.g., Python, MySQL, HTML/CSS]}}{[Year]}
+          \resumeItemListStart
+            \resumeItem{[Bullet from Bullet Library -- replace ALL brackets with your specifics]}
+            \resumeItem{[Bullet from Bullet Library -- replace ALL brackets with your specifics]}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{[Course / Project Name, e.g., CS 110 -- Text-Based RPG]} $|$ \emph{[Stack: e.g., C++]}}{[Year]}
+          \resumeItemListStart
+            \resumeItem{[Bullet from Bullet Library -- replace ALL brackets with your specifics]}
+            \resumeItem{[Bullet from Bullet Library -- replace ALL brackets with your specifics]}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+% Use the Bullet Library (Survival Jobs tab) to rephrase non-tech jobs professionally.
+% Focus on: Data, Accuracy, Efficiency, Communication, and Teamwork.
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {[Job Title, e.g., Server]}{[Month Year] -- [Present / End Month Year]}
+      {[Company Name]}{Regina, SK}
+      \resumeItemListStart
+        \resumeItem{[Bullet from Survival Jobs in Bullet Library -- replace ALL brackets]}
+        \resumeItem{[Bullet from Survival Jobs in Bullet Library -- replace ALL brackets]}
+        \resumeItem{[Bullet from Survival Jobs in Bullet Library -- replace ALL brackets]}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {[Volunteer / Club Role, e.g., Event Coordinator]}{[Month Year] -- [Present]}
+      {[Organization, e.g., Computing Students' Society]}{Regina, SK}
+      \resumeItemListStart
+        \resumeItem{[Describe YOUR specific contribution -- with a metric if possible]}
+        \resumeItem{[Describe YOUR specific contribution -- with a metric if possible]}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\end{document}
