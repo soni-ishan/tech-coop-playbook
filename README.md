@@ -1,3 +1,7 @@
+🚧 **STATUS: PENDING MAJOR REFACTOR** 🚧
+
+Major changes are incoming. The current resume templates in this repository are outdated and honestly, not very nice by current standards. I considered taking this repository private, but it will remain public to preserve links from past posts. Expect a massive overhaul to the layouts and framework soon. Proceed with the current builds at your own risk.
+
 💻 The Tech Co-op Playbook
 ===============================
 
