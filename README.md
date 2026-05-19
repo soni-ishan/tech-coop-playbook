@@ -6,11 +6,11 @@ An interactive resource for Computer Science co-op students at the University of
 
 ## What's inside
 
-- **Resume templates** - two LaTeX templates (projects-first and experience-first) based on Jake's Resume
-- **Bullet library** - copy-ready resume bullets for CS courses, adapted to specific job targets
-- **Pre-flight linter** - checklist before submitting to Career Connect
-- **Interview prep** - how the UofR co-op match process works, STAR method, common questions, what to ask
-- **AI prompts** - structured prompts for resume critique, tailoring, mock interviews, and company research
+- **Resume templates:** two LaTeX templates (projects-first and experience-first) based on Jake's Resume
+- **Bullet library:** copy-ready resume bullets for CS courses, adapted to specific job targets
+- **Pre-flight linter:** checklist before submitting to Career Connect
+- **Interview prep:** how the UofR co-op match process works, STAR method, common questions, what to ask
+- **AI prompts:** structured prompts for resume critique, tailoring, mock interviews, and company research
 
 ## Project structure
 
