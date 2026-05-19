@@ -79,6 +79,20 @@ const DATA = {
         ]
       },
       {
+        course: "CS 280: Risk and Reward in Information",
+        target: "IT Security / Risk Analyst",
+        angles: [
+          {
+            name: "The Risk Analyst",
+            bullets: [
+              "Evaluated information security risk using the CIA Triad and risk assessment frameworks, identifying threat vectors and analyzing trade-offs between system utility and security posture.",
+              "Analyzed real-world case studies of data breaches and information misuse to identify systemic vulnerabilities and evaluate organizational liability and mitigation options.",
+              "Examined legal, ethical, and technical dimensions of [Information Security Scenario], assessing compliance requirements and the societal impact of information exposure."
+            ]
+          }
+        ]
+      },
+      {
         course: "CS 330: Intro to Operating Systems",
         target: "Systems / Backend Developer",
         angles: [
@@ -110,9 +124,23 @@ const DATA = {
             ]
           }
         ]
+      },
+      {
+        course: "CS 476: Software Development Project",
+        target: "Full Stack Developer / Software Engineer",
+        angles: [
+          {
+            name: "The Product Owner",
+            bullets: [
+              "Co-developed [App Name], a full-stack production application for [Real World Client/Problem], handling the entire SDLC from requirements gathering to deployment.",
+              "Integrated [Specific APIs] and [Database] to support [Core Feature], ensuring scalability for [Number] concurrent users.",
+              "Implemented CI/CD pipelines using [Tool, e.g., GitHub Actions] to automate testing and deployment workflows."
+            ]
+          }
+        ]
       }
     ],
-
+    
     csElectives: [
       {
         course: "CS 207: Building Interactive Gadgets",
@@ -123,20 +151,6 @@ const DATA = {
             bullets: [
               "Prototyped an IoT device using [Hardware, e.g., Arduino Uno R4], integrating sensors to monitor [Metric] and transmit data via [Protocol].",
               "Programmed microcontrollers in C/C++ to control physical actuators based on real-time environmental data from [Sensor Type]."
-            ]
-          }
-        ]
-      },
-      {
-        course: "CS 280: Risk and Reward in Information",
-        target: "IT Security / Risk Analyst",
-        angles: [
-          {
-            name: "The Risk Analyst",
-            bullets: [
-              "Evaluated information security risk using the CIA Triad and risk assessment frameworks, identifying threat vectors and analyzing trade-offs between system utility and security posture.",
-              "Analyzed real-world case studies of data breaches and information misuse to identify systemic vulnerabilities and evaluate organizational liability and mitigation options.",
-              "Examined legal, ethical, and technical dimensions of [Information Security Scenario], assessing compliance requirements and the societal impact of information exposure."
             ]
           }
         ]
@@ -189,20 +203,6 @@ const DATA = {
             bullets: [
               "Built an immersive [VR/AR Experience] using [Engine, e.g., Unity/Unreal], implementing physics-based interactions and spatial audio.",
               "Designed intuitive 3D user interfaces for [Application Context], optimizing rendering performance to maintain high framerates."
-            ]
-          }
-        ]
-      },
-      {
-        course: "CS 476: Software Development Project",
-        target: "Full Stack Developer / Software Engineer",
-        angles: [
-          {
-            name: "The Product Owner",
-            bullets: [
-              "Co-developed [App Name], a full-stack production application for [Real World Client/Problem], handling the entire SDLC from requirements gathering to deployment.",
-              "Integrated [Specific APIs] and [Database] to support [Core Feature], ensuring scalability for [Number] concurrent users.",
-              "Implemented CI/CD pipelines using [Tool, e.g., GitHub Actions] to automate testing and deployment workflows."
             ]
           }
         ]
