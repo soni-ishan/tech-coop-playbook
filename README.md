@@ -6,11 +6,11 @@ An interactive resource for Computer Science co-op students at the University of
 
 ## What's inside
 
-- **Resume templates** — two LaTeX templates (projects-first and experience-first) based on Jake's Resume
-- **Bullet library** — copy-ready resume bullets for CS courses, adapted to specific job targets
-- **Pre-flight linter** — checklist before submitting to Career Connect
-- **Interview prep** — how the UofR co-op match process works, STAR method, common questions, what to ask
-- **AI prompts** — structured prompts for resume critique, tailoring, mock interviews, and company research
+- **Resume templates** - two LaTeX templates (projects-first and experience-first) based on Jake's Resume
+- **Bullet library** - copy-ready resume bullets for CS courses, adapted to specific job targets
+- **Pre-flight linter** - checklist before submitting to Career Connect
+- **Interview prep** - how the UofR co-op match process works, STAR method, common questions, what to ask
+- **AI prompts** - structured prompts for resume critique, tailoring, mock interviews, and company research
 
 ## Project structure
 
@@ -22,8 +22,8 @@ An interactive resource for Computer Science co-op students at the University of
 ├── content/
 │   └── data.js         # All content as structured JS objects
 └── templates/
-    ├── starter.tex     # Level 0 — projects-first layout
-    └── veteran.tex     # Level 50 — experience-first layout
+    ├── starter.tex     # Level 0 - projects-first layout
+    └── veteran.tex     # Level 50 - experience-first layout
 ```
 
 ## Running locally
@@ -42,7 +42,7 @@ GitHub Pages: Settings → Pages → Deploy from branch `main`, folder `/`.
 
 ## Feedback
 
-This is a personal project built from one person's experience across 4 UofR co-op terms. The content is opinionated by design — it reflects what worked, not a consensus view.
+This is a personal project built from one person's experience across 4 UofR co-op terms. The content is opinionated by design - it reflects what worked, not a consensus view.
 
 If you spot a broken link, factual error, or layout bug, open an issue. If you've done a co-op term and want to flag something that's inaccurate or suggest a bullet, open an issue with the details and I'll consider it.
 

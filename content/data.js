@@ -457,7 +457,7 @@ const DATA = {
         q: "What was your specific contribution to that project / What part of it was yours?",
         type: "Behavioral",
         why: "Interviewers are evaluating you, not your group. 'We built X' tells them nothing about what you can do. They want to know what you personally owned, decided, and delivered.",
-        approach: "Be precise. Not 'I helped with the backend' but 'I designed the database schema and wrote the API endpoints for the search feature.' If your contribution was smaller than you'd like, be honest — frame what you learned. Course group projects are fair game; just know your part cold.",
+        approach: "Be precise. Not 'I helped with the backend' but 'I designed the database schema and wrote the API endpoints for the search feature.' If your contribution was smaller than you'd like, be honest - frame what you learned. Course group projects are fair game; just know your part cold.",
         ftf: "A technical hiring manager told me at a career fair: students need to be able to talk about their specific role within a team. Most say 'we built X' and fall apart when pressed. Know exactly what part was yours before you walk in."
       },
       {

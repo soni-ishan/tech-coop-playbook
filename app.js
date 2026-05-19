@@ -307,7 +307,7 @@ function buildIvHow(iv) {
 
   const statsTitle = document.createElement("h3");
   statsTitle.className = "iv-section-title";
-  statsTitle.textContent = "Application Stats — From the Field";
+  statsTitle.textContent = "Application Stats - From the Field";
   wrap.appendChild(statsTitle);
 
   const table = document.createElement("table");
