@@ -1121,11 +1121,10 @@ footer {
 }
 
 .footer-author-links a {
-  font-size: .82rem;
-  padding: 4px 10px;
-  border: 1px solid #1e293b;
-  border-radius: 6px;
-  transition: border-color .15s;
+  display: flex;
+  align-items: center;
+  color: #94a3b8;
+  transition: color .15s;
 }
 
-.footer-author-links a:hover { border-color: #93c5fd; }
+.footer-author-links a:hover { color: #e2e8f0; }

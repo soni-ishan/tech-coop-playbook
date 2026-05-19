@@ -305,10 +305,11 @@ const DATA = {
     warnings: [
       { text: '"References available upon request" removed. It wastes space; recruiters ask later.', tag: "CONTENT" },
       { text: "Phone number included. Required by the University Co-op Office.", tag: "CONTACT" },
-      { text: "LinkedIn and GitHub are clickable hyperlinks, not plain text URLs.", tag: "LINKS" },
+      { text: "LinkedIn and GitHub are clickable hyperlinks formatted as linkedin.com/in/[handle] and github.com/[handle]. No https:// prefix, no trailing slash.", tag: "LINKS" },
       { text: "Full street address removed. City, Province is sufficient.", tag: "PRIVACY" },
       { text: "Relevant Coursework tweaked for this specific role, not a static list.", tag: "TAILORING" },
       { text: "Final spell check complete. Typos are an immediate rejection.", tag: "QUALITY" },
+      { text: "No filler phrases: 'passionate', 'hard worker', 'team player', 'detail-oriented'. Every claim needs a specific example to back it up.", tag: "CONTENT" },
       { text: "Languages listed are specific, not generic. Write 'Python (Pandas, Flask)' not just 'Python'.", tag: "SPECIFICITY" },
       { text: "Applying outside your city? Add 'Relocating to [City]' in your header.", tag: "LOCATION" }
     ],
@@ -451,6 +452,13 @@ const DATA = {
         why: "Co-op roles are team-based. They want evidence you can collaborate, handle disagreement, and still deliver.",
         approach: "Use STAR. Focus on your specific contribution, not the team's. If there was friction, show how you helped resolve it. Course group projects count.",
         ftf: null
+      },
+      {
+        q: "What was your specific contribution to that project / What part of it was yours?",
+        type: "Behavioral",
+        why: "Interviewers are evaluating you, not your group. 'We built X' tells them nothing about what you can do. They want to know what you personally owned, decided, and delivered.",
+        approach: "Be precise. Not 'I helped with the backend' but 'I designed the database schema and wrote the API endpoints for the search feature.' If your contribution was smaller than you'd like, be honest — frame what you learned. Course group projects are fair game; just know your part cold.",
+        ftf: "A technical hiring manager told me at a career fair: students need to be able to talk about their specific role within a team. Most say 'we built X' and fall apart when pressed. Know exactly what part was yours before you walk in."
       },
       {
         q: "Tell me about a time you faced a conflict or disagreement.",
