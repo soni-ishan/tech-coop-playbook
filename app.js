@@ -13,7 +13,6 @@ function buildBulletLibrary() {
   const categories = [
     { key: "csCore",      label: "CS Core" },
     { key: "csElectives", label: "CS Electives" },
-    { key: "mathStat",    label: "Math / Stat" },
     { key: "survivalJobs",label: "Survival Jobs" }
   ];
 

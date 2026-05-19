@@ -79,40 +79,81 @@ const DATA = {
         ]
       },
       {
+        course: "CS 310: Discrete Computational Structure",
+        target: "Software Engineer / CS Foundations",
+        angles: [
+          {
+            name: "The Logical Reasoner",
+            bullets: [
+              "Applied propositional and predicate logic to construct formal proofs, developing the mathematical reasoning skills underlying algorithm correctness and verification.",
+              "Analyzed graph structures (trees, paths, connected components) to model [Computational Problem], applying traversal and reachability arguments to derive solutions."
+            ]
+          },
+          {
+            name: "The Combinatorialist",
+            bullets: [
+              "Applied combinatorics and counting principles to characterize the solution space of [Algorithm/Problem], analyzing permutations and combinations to evaluate complexity.",
+              "Studied relations, functions, and set theory as formal foundations for database schemas, type systems, and program specification."
+            ]
+          }
+        ]
+      },
+      {
+        course: "CS 330: Intro to Operating Systems",
+        target: "Systems / Backend Developer",
+        angles: [
+          {
+            name: "The Systems Programmer",
+            bullets: [
+              "Implemented a [OS concept, e.g., CPU scheduler / memory allocator] in C, applying [Algorithm, e.g., Round Robin / First-Fit] to manage resources under simulated concurrent workloads.",
+              "Analyzed synchronization primitives (mutexes, semaphores, condition variables) to solve [Classic Problem, e.g., Producer-Consumer / Dining Philosophers] and prevent deadlock."
+            ]
+          },
+          {
+            name: "The Resource Manager",
+            bullets: [
+              "Examined virtual memory, paging, and page replacement algorithms (e.g., LRU, FIFO) to understand how operating systems abstract and manage physical memory resources.",
+              "Studied process lifecycle management and inter-process communication (IPC) mechanisms, analyzing trade-offs between isolation and communication overhead."
+            ]
+          }
+        ]
+      },
+      {
         course: "CS 335: Computer Networks",
         target: "Network / Infrastructure Engineer",
         angles: [
           {
-            name: "The Protocol Engineer (App & Transport Layers)",
+            name: "The Protocol Analyst (App & Transport Layers)",
             bullets: [
-              "Analyzed HTTP and DNS protocols to optimize [Web App Performance], diagnosing latency issues using [Tool, e.g., Wireshark].",
-              "Implemented a client-server chat application using [TCP/UDP Sockets], handling congestion control and reliable data transfer."
+              "Analyzed the HTTP, DNS, and TCP/IP protocol stack, tracing data flow across OSI layers and evaluating latency, reliability, and congestion control trade-offs.",
+              "Studied TCP congestion control algorithms (e.g., Tahoe, Reno) and their impact on throughput and fairness in simulated network scenarios."
             ]
           },
           {
-            name: "The Network Architect (Network & Link Layers)",
+            name: "The Network Designer (Network & Link Layers)",
             bullets: [
-              "Simulated IP Addressing and Subnetting schemes to design a scalable network architecture for [Scenario, e.g., Campus Network].",
-              "Implemented Routing Algorithms (e.g., Distance Vector) to optimize packet forwarding paths in a simulated [Topology Type]."
+              "Designed IP addressing and subnetting schemes for [Scenario, e.g., a campus network], analyzing packet routing decisions under Distance Vector and Link State protocols.",
+              "Examined Ethernet and Wi-Fi link layer mechanisms, studying CSMA/CD, MAC addressing, and frame error detection methods."
             ]
           }
         ]
       },
       {
         course: "CS 350: Programming Language Concepts",
-        target: "Compiler / Language Engineer",
+        target: "Software Developer / Language-Aware Engineer",
         angles: [
           {
-            name: "The Compiler Designer",
+            name: "The Language Analyst",
             bullets: [
-              "Designed a Context-Free Grammar (BNF) and Abstract Syntax Tree for a [Custom Language/DSL], implementing a lexical analyzer to parse input.",
-              "Implemented a Recursive Descent Parser to validate code structure, handling syntax errors and ambiguity for [Language Feature]."
+              "Analyzed formal language theory including regular expressions, context-free grammars (CFGs), and BNF notation to model the syntax and structure of programming languages.",
+              "Studied parsing strategies (LL, LR, recursive descent) and evaluated trade-offs in ambiguity resolution, derivation, and parse tree construction."
             ]
           },
           {
-            name: "The Functional Programmer",
+            name: "The Paradigm Comparatist",
             bullets: [
-              "Developed functional programs using [Language, e.g., Scheme/Haskell], utilizing Higher-Order Functions and Recursion to solve [Problem] without mutable state."
+              "Compared programming paradigms (imperative, functional, logic, object-oriented) across languages such as [Language, e.g., Scheme/Prolog/Haskell], analyzing scoping, type systems, and evaluation models.",
+              "Examined binding, type checking, and memory management models to understand how language design decisions affect runtime behavior and developer ergonomics."
             ]
           }
         ]
@@ -122,10 +163,10 @@ const DATA = {
         target: "Software Engineer / Project Lead",
         angles: [
           {
-            name: "The Technical Project Manager",
+            name: "The Process-Aware Developer",
             bullets: [
-              "Led a team of [Number] developers to build [App Name], utilizing Agile/Scrum methodologies to manage [Number] sprints and deliverables.",
-              "Designed comprehensive UML diagrams and requirements documentation for [Project Name], ensuring alignment between client needs and technical implementation."
+              "Produced requirements specifications, UML class and sequence diagrams, and design documentation for [System Name] following structured SDLC and Agile/Scrum practices.",
+              "Collaborated in a team of [Number] applying software engineering principles to analyze, design, and document [System Name] across [Number] iterative development cycles."
             ]
           }
         ]
@@ -147,20 +188,43 @@ const DATA = {
         ]
       },
       {
-        course: "CS 320/421: Artificial Intelligence (Intro & Adv)",
-        target: "ML Engineer / Data Scientist",
+        course: "CS 280: Risk and Reward in Information",
+        target: "IT Security / Risk Analyst",
         angles: [
           {
-            name: "The Agent Builder",
+            name: "The Risk Analyst",
             bullets: [
-              "Implemented Search Algorithms (e.g., Minimax, Alpha-Beta Pruning) to develop an autonomous agent capable of solving [Game/Environment] with optimal efficiency.",
-              "Applied Constraint Satisfaction Problems (CSP) logic to solve [Scheduling/Logistics Challenge] without brute-force."
+              "Evaluated information security risk using the CIA Triad and risk assessment frameworks, identifying threat vectors and analyzing trade-offs between system utility and security posture.",
+              "Analyzed real-world case studies of data breaches and information misuse to identify systemic vulnerabilities and evaluate organizational liability and mitigation options.",
+              "Examined legal, ethical, and technical dimensions of [Information Security Scenario], assessing compliance requirements and the societal impact of information exposure."
             ]
-          },
+          }
+        ]
+      },
+      {
+        course: "CS 320: Intro to Artificial Intelligence",
+        target: "Software Engineer / AI Enthusiast",
+        angles: [
           {
-            name: "The Deep Learning Engineer",
+            name: "The Search & Planning Agent",
             bullets: [
-              "Engineered a Neural Network using [Framework, e.g., PyTorch/TensorFlow] to classify [Dataset Name], achieving [X]% accuracy through hyperparameter tuning."
+              "Implemented uninformed and informed search algorithms (BFS, DFS, A*) to solve [Problem, e.g., pathfinding / puzzle], analyzing completeness and optimality guarantees.",
+              "Applied Minimax with Alpha-Beta Pruning to develop a game-playing agent for [Game, e.g., Tic-Tac-Toe / Chess], evaluating the effect of search depth on performance.",
+              "Modeled [Scheduling/Assignment Problem] as a Constraint Satisfaction Problem (CSP), applying backtracking and arc consistency heuristics to find valid solutions."
+            ]
+          }
+        ]
+      },
+      {
+        course: "CS 421: Advanced Artificial Intelligence (KR&R)",
+        target: "AI / Knowledge Systems Engineer",
+        angles: [
+          {
+            name: "The Knowledge Engineer",
+            bullets: [
+              "Modeled domain knowledge using [Representation, e.g., Semantic Networks / Description Logic / Ontologies], analyzing inference procedures for soundness and completeness.",
+              "Studied propositional and first-order logic as formal frameworks for knowledge representation, evaluating the expressive power and computational complexity trade-offs of each.",
+              "Compared knowledge representation paradigms (frames, rules, description logics) and analyzed their trade-offs in reasoning tractability and real-world applicability."
             ]
           }
         ]
@@ -218,7 +282,7 @@ const DATA = {
         ]
       },
       {
-        course: "CS 476: Software Development Project (Capstone)",
+        course: "CS 476: Software Development Project",
         target: "Full Stack Developer / Software Engineer",
         angles: [
           {
@@ -233,73 +297,20 @@ const DATA = {
       },
       {
         course: "CS 490DJ: Topics in Cybersecurity",
-        target: "Cyber Analyst / Security Engineer",
+        target: "Security Analyst / IT Risk Analyst",
         angles: [
           {
-            name: "The Security Analyst",
+            name: "The Security Researcher",
             bullets: [
-              "Conducted Vulnerability Assessments on [Target System], identifying potential vectors for SQL Injection and XSS attacks.",
-              "Implemented cryptographic protocols (AES/RSA) to secure data transmission in a [Application Name] prototype.",
-              "Analyzed network traffic logs to identify [Attack Pattern] signatures, proposing mitigation strategies for enterprise infrastructure."
+              "Researched [Cybersecurity Topic, e.g., SQL Injection / Social Engineering / Ransomware], analyzing real-world incidents to identify attack vectors, root causes, and mitigation strategies.",
+              "Produced a technical research report on [Security Topic], synthesizing academic and industry literature to evaluate threat models and recommend defensive countermeasures.",
+              "Examined cryptographic protocols (e.g., AES, RSA, TLS) and their application in securing [System Type], analyzing trade-offs between security strength and computational overhead."
             ]
           }
         ]
       }
     ],
 
-    mathStat: [
-      {
-        course: "MATH 110/111: Calculus I & II",
-        target: "Data Science / Engineering",
-        angles: [
-          {
-            name: "The Optimizer (Modeling Focus)",
-            bullets: [
-              "Applied Calculus-based optimization techniques to model [Real World Scenario, e.g., fluid rates], determining critical points for maximum efficiency.",
-              "Analyzed rates of change in [System Name] using derivatives and integrals to predict future states of the system with [Level of Accuracy]."
-            ]
-          }
-        ]
-      },
-      {
-        course: "MATH 122: Linear Algebra",
-        target: "Data Science / ML / Graphics",
-        angles: [
-          {
-            name: "The Data Scientist (Matrix Focus)",
-            bullets: [
-              "Utilized matrix operations and eigenvalues to transform and analyze multidimensional datasets related to [Topic].",
-              "Modeled [System Name] using linear systems of equations, applying Gaussian elimination to determine system consistency."
-            ]
-          },
-          {
-            name: "The Graphics Engineer (Vector Focus)",
-            bullets: [
-              "Applied vector space theory to simulate [3D movement/Physics] in a theoretical environment, calculating projections and transformations for [Object]."
-            ]
-          }
-        ]
-      },
-      {
-        course: "STAT 160/252: Intro to Stats & Probability",
-        target: "Data Analyst / QA Engineer",
-        angles: [
-          {
-            name: "The Analyst (Inference Focus)",
-            bullets: [
-              "Conducted Hypothesis Testing (t-tests, Chi-square) on [Dataset Name] to determine statistical significance of [Variable A] on [Variable B].",
-              "Applied Linear Regression models to a [Dataset], identifying correlations and forecasting future trends with [approx %] confidence."
-            ]
-          },
-          {
-            name: "The Quality Control Engineer (Probability Focus)",
-            bullets: [
-              "Utilized probability distributions (Normal, Binomial) to model risk and failure rates in a [Theoretical System], predicting uptime probability."
-            ]
-          }
-        ]
-      }
-    ],
 
     survivalJobs: [
       {
@@ -541,14 +552,14 @@ const DATA = {
         type: "Motivational",
         why: "Generic enthusiasm does not land. They want to see that you researched the organization and can articulate a specific connection.",
         approach: "Research the org before the interview: What do they build? What problems do they solve? Connect one specific thing about them to one specific thing about your background or goals. Avoid ‘great culture’ — you haven’t worked there yet.",
-        ftf: "For SaskEnergy, I mentioned their specific infrastructure work and how it connected to my interest in systems that affect everyday life. That specificity stood out. Most candidates answer this question generically."
+        ftf: "For SaskTel, I mentioned their specific infrastructure work and how it connected to my interest in systems that affect everyday life. That specificity stood out. Most candidates answer this question generically."
       },
       {
         q: "On a scale of 1 to 5, how would you rate yourself on [technology X]?",
         type: "Technical",
         why: "They are calibrating your skill level to set expectations. Inflating your score will backfire on the job. Under-selling is unnecessary.",
         approach: "Be honest. A 3 with a clear explanation beats a 5 you cannot back up. Follow with what you’ve done with that tech and what you’re still learning. Example: ‘I’d say a 3: I’ve used it for [project] but haven’t worked with [advanced feature] yet.’",
-        ftf: "At SaskTel, I was asked this about Microsoft Excel. I said 3.5, then added that I’m a fast learner and can quickly pick up new tools. The number matters less than showing you know where you stand and are willing to grow."
+        ftf: "At SaskEnergy, I was asked this about Microsoft Excel. I said 3.5, then added that I’m a fast learner and can quickly pick up new tools. The number matters less than showing you know where you stand and are willing to grow."
       },
       {
         q: "Do you have experience with [technology X]? Give an example.",
