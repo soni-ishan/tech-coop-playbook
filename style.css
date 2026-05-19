@@ -56,6 +56,9 @@ body {
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: -.01em;
