@@ -35,6 +35,8 @@
     <p class="hero-desc">
       A Mad Libs&#8209;style resume framework. Pick a template, grab bullets for your courses,
       replace the <code>[brackets]</code>, and ship your application.
+      Also covers the UofR co-op match process, how to answer behavioral and technical questions,
+      and AI prompts that actually help.
     </p>
     <p class="hero-warning">
       &#9888;&nbsp; Do not submit a resume that still contains [brackets].
@@ -88,7 +90,7 @@
 
       <!-- Starter -->
       <div class="template-card">
-        <span class="template-badge">Level 0</span>
+        <span class="template-badge">Projects-First</span>
         <h3>Starter</h3>
         <p>
           For students with <strong>no co-op experience yet.</strong>
@@ -123,7 +125,7 @@
 
       <!-- Veteran -->
       <div class="template-card">
-        <span class="template-badge">Level 50</span>
+        <span class="template-badge">Experience-First</span>
         <h3>Veteran</h3>
         <p>
           For students with <strong>at least one co-op term.</strong>
@@ -182,6 +184,45 @@
       adapt them to match what you actually built in your specific section of the course.
     </p>
 
+    <div class="bullet-guide">
+      <p class="bullet-guide-heading">Course not listed? Write your own.</p>
+      <p>Every good bullet in this library follows the same structure: <strong>Action verb &rarr; what you built or did &rarr; technology or tool &rarr; result or outcome.</strong> Apply that to any course project.</p>
+      <div class="bullet-guide-steps">
+        <div class="bullet-guide-step">
+          <span class="bullet-guide-num">1</span>
+          <div>
+            <strong>Start with what you actually built or implemented</strong> — not what the course covered in theory.
+            If you implemented a scheduler, wrote a parser, trained a model, built a UI — that is your action.
+          </div>
+        </div>
+        <div class="bullet-guide-step">
+          <span class="bullet-guide-num">2</span>
+          <div>
+            <strong>Name the specific language, tool, or framework</strong> you used. &ldquo;Python&rdquo; is better than nothing.
+            &ldquo;Python (scikit-learn, Pandas)&rdquo; is better than &ldquo;Python.&rdquo;
+          </div>
+        </div>
+        <div class="bullet-guide-step">
+          <span class="bullet-guide-num">3</span>
+          <div>
+            <strong>End with a result.</strong> What did it produce, enable, or demonstrate?
+            Quantify if you can. If you can&rsquo;t, describe the outcome: &ldquo;enabling real-time queries on [X] records&rdquo;
+            or &ldquo;reducing manual steps from [N] to one.&rdquo;
+          </div>
+        </div>
+      </div>
+      <div class="bullet-guide-example">
+        <div class="bullet-guide-bad">
+          <span class="bullet-guide-tag tag-bad">Weak</span>
+          &ldquo;Learned about operating system concepts including scheduling and memory management.&rdquo;
+        </div>
+        <div class="bullet-guide-good">
+          <span class="bullet-guide-tag tag-good">Strong</span>
+          &ldquo;Implemented a Round Robin CPU scheduler in C, simulating process queuing for [N] concurrent processes and analyzing turnaround time vs. quantum size trade-offs.&rdquo;
+        </div>
+      </div>
+    </div>
+
     <div id="tab-nav" class="tab-nav" role="tablist" aria-label="Bullet categories"></div>
     <div id="tab-panels"></div>
   </div>
@@ -213,7 +254,7 @@
 <!-- ── INTERVIEW PREP ─────────────────────────────────────────────── -->
 <section id="interview">
   <div class="container">
-    <p class="section-label">Step 4</p>
+    <p class="section-label">Interview</p>
     <h2 class="section-title">Interview Prep</h2>
     <p class="section-sub">
       How UofR co-op interviews work, how to answer behavioral and technical questions,
@@ -229,7 +270,7 @@
 <!-- ── AI PROMPTS ────────────────────────────────────────────────── -->
 <section id="prompts">
   <div class="container">
-    <p class="section-label">Bonus Tools</p>
+    <p class="section-label">AI Tools</p>
     <h2 class="section-title">AI Prompts</h2>
     <p class="section-sub">
       Stop asking ChatGPT to &ldquo;write your resume.&rdquo; That produces generic text recruiters hate.

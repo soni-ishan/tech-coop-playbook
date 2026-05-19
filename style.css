@@ -282,6 +282,68 @@ section:nth-child(even) { background: var(--color-bg-alt); }
 }
 
 /* ── BULLET LIBRARY ────────────────────── */
+.bullet-guide {
+  margin-bottom: 28px;
+  padding: 20px 24px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+}
+.bullet-guide-heading {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-text);
+  margin: 0 0 10px;
+}
+.bullet-guide p { margin: 0 0 16px; font-size: .9rem; color: var(--color-muted); }
+.bullet-guide-steps { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+.bullet-guide-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  font-size: .88rem;
+  color: #cbd5e1;
+}
+.bullet-guide-num {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #1e3a5f;
+  color: #93c5fd;
+  font-size: .78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+.bullet-guide-example { display: flex; flex-direction: column; gap: 10px; }
+.bullet-guide-bad,
+.bullet-guide-good {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: .85rem;
+  font-style: italic;
+  color: #cbd5e1;
+}
+.bullet-guide-bad  { background: #1c1010; border-left: 3px solid #7f1d1d; }
+.bullet-guide-good { background: #0a1f14; border-left: 3px solid #166534; }
+.bullet-guide-tag {
+  display: inline-block;
+  font-style: normal;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: 1px 7px;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.tag-bad  { background: #7f1d1d; color: #fca5a5; }
+.tag-good { background: #14532d; color: #86efac; }
+
 .tab-nav {
   display: flex;
   gap: 4px;
