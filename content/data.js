@@ -79,26 +79,6 @@ const DATA = {
         ]
       },
       {
-        course: "CS 310: Discrete Computational Structure",
-        target: "Software Engineer / CS Foundations",
-        angles: [
-          {
-            name: "The Logical Reasoner",
-            bullets: [
-              "Applied propositional and predicate logic to construct formal proofs, developing the mathematical reasoning skills underlying algorithm correctness and verification.",
-              "Analyzed graph structures (trees, paths, connected components) to model [Computational Problem], applying traversal and reachability arguments to derive solutions."
-            ]
-          },
-          {
-            name: "The Combinatorialist",
-            bullets: [
-              "Applied combinatorics and counting principles to characterize the solution space of [Algorithm/Problem], analyzing permutations and combinations to evaluate complexity.",
-              "Studied relations, functions, and set theory as formal foundations for database schemas, type systems, and program specification."
-            ]
-          }
-        ]
-      },
-      {
         course: "CS 330: Intro to Operating Systems",
         target: "Systems / Backend Developer",
         angles: [
@@ -114,46 +94,6 @@ const DATA = {
             bullets: [
               "Examined virtual memory, paging, and page replacement algorithms (e.g., LRU, FIFO) to understand how operating systems abstract and manage physical memory resources.",
               "Studied process lifecycle management and inter-process communication (IPC) mechanisms, analyzing trade-offs between isolation and communication overhead."
-            ]
-          }
-        ]
-      },
-      {
-        course: "CS 335: Computer Networks",
-        target: "Network / Infrastructure Engineer",
-        angles: [
-          {
-            name: "The Protocol Analyst (App & Transport Layers)",
-            bullets: [
-              "Analyzed the HTTP, DNS, and TCP/IP protocol stack, tracing data flow across OSI layers and evaluating latency, reliability, and congestion control trade-offs.",
-              "Studied TCP congestion control algorithms (e.g., Tahoe, Reno) and their impact on throughput and fairness in simulated network scenarios."
-            ]
-          },
-          {
-            name: "The Network Designer (Network & Link Layers)",
-            bullets: [
-              "Designed IP addressing and subnetting schemes for [Scenario, e.g., a campus network], analyzing packet routing decisions under Distance Vector and Link State protocols.",
-              "Examined Ethernet and Wi-Fi link layer mechanisms, studying CSMA/CD, MAC addressing, and frame error detection methods."
-            ]
-          }
-        ]
-      },
-      {
-        course: "CS 350: Programming Language Concepts",
-        target: "Software Developer / Language-Aware Engineer",
-        angles: [
-          {
-            name: "The Language Analyst",
-            bullets: [
-              "Analyzed formal language theory including regular expressions, context-free grammars (CFGs), and BNF notation to model the syntax and structure of programming languages.",
-              "Studied parsing strategies (LL, LR, recursive descent) and evaluated trade-offs in ambiguity resolution, derivation, and parse tree construction."
-            ]
-          },
-          {
-            name: "The Paradigm Comparatist",
-            bullets: [
-              "Compared programming paradigms (imperative, functional, logic, object-oriented) across languages such as [Language, e.g., Scheme/Prolog/Haskell], analyzing scoping, type systems, and evaluation models.",
-              "Examined binding, type checking, and memory management models to understand how language design decisions affect runtime behavior and developer ergonomics."
             ]
           }
         ]
@@ -197,34 +137,6 @@ const DATA = {
               "Evaluated information security risk using the CIA Triad and risk assessment frameworks, identifying threat vectors and analyzing trade-offs between system utility and security posture.",
               "Analyzed real-world case studies of data breaches and information misuse to identify systemic vulnerabilities and evaluate organizational liability and mitigation options.",
               "Examined legal, ethical, and technical dimensions of [Information Security Scenario], assessing compliance requirements and the societal impact of information exposure."
-            ]
-          }
-        ]
-      },
-      {
-        course: "CS 320: Intro to Artificial Intelligence",
-        target: "Software Engineer / AI Enthusiast",
-        angles: [
-          {
-            name: "The Search & Planning Agent",
-            bullets: [
-              "Implemented uninformed and informed search algorithms (BFS, DFS, A*) to solve [Problem, e.g., pathfinding / puzzle], analyzing completeness and optimality guarantees.",
-              "Applied Minimax with Alpha-Beta Pruning to develop a game-playing agent for [Game, e.g., Tic-Tac-Toe / Chess], evaluating the effect of search depth on performance.",
-              "Modeled [Scheduling/Assignment Problem] as a Constraint Satisfaction Problem (CSP), applying backtracking and arc consistency heuristics to find valid solutions."
-            ]
-          }
-        ]
-      },
-      {
-        course: "CS 421: Advanced Artificial Intelligence (KR&R)",
-        target: "AI / Knowledge Systems Engineer",
-        angles: [
-          {
-            name: "The Knowledge Engineer",
-            bullets: [
-              "Modeled domain knowledge using [Representation, e.g., Semantic Networks / Description Logic / Ontologies], analyzing inference procedures for soundness and completeness.",
-              "Studied propositional and first-order logic as formal frameworks for knowledge representation, evaluating the expressive power and computational complexity trade-offs of each.",
-              "Compared knowledge representation paradigms (frames, rules, description logics) and analyzed their trade-offs in reasoning tractability and real-world applicability."
             ]
           }
         ]
