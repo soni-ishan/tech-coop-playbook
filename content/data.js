@@ -462,11 +462,11 @@ const DATA = {
         }
       ],
       stats: [
-        { term: "Term 1 — GoS (double term)", apps: "40–50", interviews: "2–3", result: "Matched #1 both rounds" },
-        { term: "Term 2 — SaskEnergy", apps: "10–12", interviews: "1", result: "Matched #1" },
-        { term: "Term 4 — SaskTel", apps: "4–5", interviews: "2", result: "Ranked #1 & #2, different teams" }
+        { term: "Term 1, GoS (double term)", apps: "40–50", interviews: "2–3", result: "Matched #1 both rounds" },
+        { term: "Term 2, SaskEnergy", apps: "10–12", interviews: "1", result: "Matched #1" },
+        { term: "Term 4, SaskTel", apps: "4–5", interviews: "2", result: "Ranked #1 & #2, different teams" }
       ],
-      ftf: "Co-op salary is not negotiable at UofR. The university sets a minimum hourly floor based on your year of study; the employer may choose to pay above it. Focus your energy on landing the match, not the rate.",
+      ftf: null,
       rules: [
         { type: "fatal", text: "Miss the application deadline and you are out for the round. Set a calendar reminder the day postings open." },
         { type: "fatal", text: "Fail to submit your rankings in Career Connect by the deadline and you will not be matched, even if an employer ranked you #1." },
@@ -476,27 +476,27 @@ const DATA = {
     },
 
     stars: {
-      source: "STARS framework sourced from: Government of Canada Job Bank, University of Saskatchewan SECC, and the Regina Open Door Society Employment Readiness Program.",
+      source: "STAR framework sourced from: Government of Canada Job Bank, University of Saskatchewan SECC, and the Regina Open Door Society Employment Readiness Program.",
       steps: [
-        { letter: "S", label: "Situation", desc: "Set the scene briefly. Where were you working? What was the context? Keep it to 1–2 sentences — don’t over-explain." },
+        { letter: "S", label: "Situation", desc: "Set the scene briefly. Where were you working? What was the context? Keep it to 1-2 sentences. Don’t over-explain." },
         { letter: "T", label: "Task", desc: "What was your specific responsibility? Distinguish your role from the team’s role." },
         { letter: "A", label: "Action", desc: "What did YOU do? Use ‘I’, not ‘we’. Be specific about the decisions and steps you took. This is the most important part." },
-        { letter: "R", label: "Result", desc: "What happened? Quantify wherever possible — hours saved, percentage improvement, number of users, dollar amount." },
-        { letter: "S", label: "Skills", desc: "What skill did this demonstrate? Tie it back to the role you are applying for. Make the connection explicit." }
+        { letter: "R", label: "Result", desc: "What happened? Quantify wherever possible: hours saved, percentage improvement, number of users. Connect the outcome to what it demonstrates. You don’t need a separate Skills statement." }
       ],
       example: {
-        title: "Worked Example — Power Query Automation",
-        situation: "At the Government of Saskatchewan, the team manually compiled vehicle charge data from multiple Excel files every week.",
-        task: "I was asked to find a way to streamline the weekly reporting process.",
-        action: "I built a Power Query pipeline that automatically pulled, transformed, and consolidated data from the source files into a single report with one refresh.",
-        result: "Eliminated 10+ hours of manual processing per week, freeing the team to focus on analysis rather than data entry.",
-        skills: "Data automation, Excel/Power Query, analytical thinking. Directly relevant to any analyst, developer, or operations role."
+        title: "Worked Example: DC Power Outage Visualizer (SaskTel)",
+        question: "What was your last employer’s opinion of you?",
+        situation: "I completed a co-op term at SaskTel’s Core Network department, working on DC power automation initiatives under my manager.",
+        task: "The goal was to move several high-level concepts into functional engineering tools, which required a high degree of technical independence and clear communication.",
+        action: "I took full ownership of developing a DC Power Outage Visualizer from the ground up. I stayed communicative throughout, asking thoughtful questions while integrating feedback into each iteration. My manager noted I required very little day-to-day supervision despite the complexity.",
+        result: "My final evaluation rated my performance ‘Exceeds Expectations’ and my technical work ‘Exceptional’. My manager described me as a ‘great asset’ and ‘extremely impressive’, specifically noting my ability to turn a vague idea into a functioning tool that gave the department insights they previously didn’t have access to."
       },
       tips: [
-        "Prepare 4–5 STARS stories before your interview. Most behavioral questions can be answered from the same pool of examples.",
-        "Avoid saying ‘we’ without explaining your specific contribution — interviewers are evaluating you, not your team.",
+        "Prepare 4-5 STAR stories before your interview. Most behavioral questions can be answered from the same pool.",
+        "Avoid saying ‘we’ without explaining your specific contribution. Interviewers are evaluating you, not your team.",
         "No work experience? Course projects count. A database assignment is a real deliverable.",
-        "If you blank on a quantifiable result, say: ‘The project was well-received by the team’ — vague but honest."
+        "If you blank on a quantifiable result: ‘The project was well-received by the team’ is vague but honest.",
+        "Weave what the experience demonstrates naturally into your Result. You don’t need a separate Skills statement."
       ]
     },
 
@@ -526,14 +526,14 @@ const DATA = {
         q: "Tell me about a time you worked in a team.",
         type: "Behavioral",
         why: "Co-op roles are team-based. They want evidence you can collaborate, handle disagreement, and still deliver.",
-        approach: "Use STARS. Focus on your specific contribution, not the team’s. If there was friction, show how you helped resolve it. Course group projects count.",
+        approach: "Use STAR. Focus on your specific contribution, not the team’s. If there was friction, show how you helped resolve it. Course group projects count.",
         ftf: null
       },
       {
         q: "Tell me about a time you faced a conflict or disagreement.",
         type: "Behavioral",
         why: "They want emotional maturity and communication skills. Blaming others or saying ‘I’ve never had a conflict’ are both wrong answers.",
-        approach: "Use STARS. Pick a conflict about a work or project decision, not a personality clash. Show you listened, communicated directly, and reached a resolution. Emphasize what you learned.",
+        approach: "Use STAR. Pick a conflict about a work or project decision, not a personality clash. Show you listened, communicated directly, and reached a resolution. Emphasize what you learned.",
         ftf: null
       },
       {
@@ -541,28 +541,28 @@ const DATA = {
         type: "Motivational",
         why: "Generic enthusiasm does not land. They want to see that you researched the organization and can articulate a specific connection.",
         approach: "Research the org before the interview: What do they build? What problems do they solve? Connect one specific thing about them to one specific thing about your background or goals. Avoid ‘great culture’ — you haven’t worked there yet.",
-        ftf: "For SaskEnergy, I mentioned their specific infrastructure work and how it connected to my interest in systems that affect everyday life. That specificity stood out — most candidates answer this question generically."
+        ftf: "For SaskEnergy, I mentioned their specific infrastructure work and how it connected to my interest in systems that affect everyday life. That specificity stood out. Most candidates answer this question generically."
       },
       {
         q: "On a scale of 1 to 5, how would you rate yourself on [technology X]?",
         type: "Technical",
         why: "They are calibrating your skill level to set expectations. Inflating your score will backfire on the job. Under-selling is unnecessary.",
-        approach: "Be honest. A 3 with a clear explanation beats a 5 you cannot back up. Follow with what you’ve done with that tech and what you’re still learning. Example: ‘I’d say a 3 — I’ve used it for [project] but haven’t worked with [advanced feature] yet.’",
-        ftf: "I was asked this at SaskTel about SQL. I said 3, explained I’d written complex JOINs in CS 215 but hadn’t used stored procedures in production. They appreciated the honesty."
+        approach: "Be honest. A 3 with a clear explanation beats a 5 you cannot back up. Follow with what you’ve done with that tech and what you’re still learning. Example: ‘I’d say a 3: I’ve used it for [project] but haven’t worked with [advanced feature] yet.’",
+        ftf: "At SaskTel, I was asked this about Microsoft Excel. I said 3.5, then added that I’m a fast learner and can quickly pick up new tools. The number matters less than showing you know where you stand and are willing to grow."
       },
       {
         q: "Do you have experience with [technology X]? Give an example.",
         type: "Technical",
         why: "They want a specific example, not a yes/no. Even one course-project use is better than a vague claim.",
-        approach: "If yes: give a one-sentence STARS example immediately. If no: be honest, then pivot — ‘I haven’t used it professionally, but I’ve worked with [related tech] and I’m comfortable picking up new tools. I’ve already started looking at it.’",
+        approach: "If yes: give a one-sentence STAR example immediately. If no: be honest, then pivot. ‘I haven’t used it professionally, but I’ve worked with [related tech] and I’m comfortable picking up new tools. I’ve already started looking at it.’",
         ftf: null
       },
       {
         q: "Give an example of something you automated or improved.",
         type: "Technical",
         why: "Common in analyst, developer, and operations roles. They want evidence of initiative and technical problem-solving.",
-        approach: "Use STARS. Quantify the before and after. Course projects that automated something count — a data pipeline, a script that replaced repetitive steps, a web scraper.",
-        ftf: "This is the Power Query story. Eliminated 10+ hours of manual weekly processing. I used this answer across multiple interviews with different orgs — the principle translates even if they don’t know the specific tool."
+        approach: "Use STAR. Quantify the before and after. Course projects count: a data pipeline, a script that replaced repetitive steps, a web scraper. If you don’t have an example ready, ask for a moment to think before answering.",
+        ftf: null
       }
     ],
 
@@ -595,12 +595,12 @@ const DATA = {
         ]
       },
       {
-        category: "Active Listening — Bring Something Back",
-        note: "Ask about something the interviewer mentioned earlier in the conversation. This is one of the strongest signals you can send — it shows you were genuinely paying attention. Only do this if it’s natural and genuine. Never force it.",
+        category: "Active Listening: Bring Something Back",
+        note: "Ask about something the interviewer mentioned earlier in the conversation. This is one of the strongest signals you can send. Only do this if it’s natural and genuine. Never force it.",
         questions: [
-          "Earlier you mentioned [X] — could you tell me more about how that works?",
-          "You brought up [Y] — is that something a co-op student would get involved in, or is it more senior-level work?",
-          "I was interested in what you said about [Z] — is that a recent shift for the team?"
+          "Earlier you mentioned [X]. Could you tell me more about how that works?",
+          "You brought up [Y]. Is that something a co-op student would get involved in, or is it more senior-level work?",
+          "I was interested in what you said about [Z]. Is that a recent shift for the team?"
         ]
       }
     ],
@@ -609,19 +609,19 @@ const DATA = {
       source: "Tips adapted from: Regina Open Door Society Employment Readiness Program and Government of Canada interview preparation resources.",
       inPerson: [
         "Arrive 5–10 minutes early. Not 20. Not on time.",
-        "Firm handshake — one pump, confident grip, eye contact.",
+        "Firm handshake: one pump, confident grip, eye contact.",
         "Sit up straight from the moment you walk in. Posture signals confidence before you say a word.",
         "Keep hands on the table or in your lap. Don’t fidget with a pen, ring, or zipper.",
-        "Maintain natural eye contact — not a stare, but enough to show you’re engaged.",
+        "Maintain natural eye contact, not a stare, just enough to show you’re engaged.",
         "Nod occasionally to show active listening.",
-        "Smile when it’s natural — especially at the start and end.",
+        "Smile when it’s natural, especially at the start and end.",
         "Don’t cross your arms. It reads as defensive."
       ],
       virtual: [
         "Log in 5 minutes early. Test camera and microphone the night before, not 2 minutes before.",
         "Light source in front of you, not behind. A window behind you turns you into a silhouette.",
         "Look at the camera when speaking, not at your own video feed.",
-        "Clean, neutral background — or a plain virtual background tested in advance.",
+        "Clean, neutral background. Or a plain virtual background tested in advance.",
         "Close every unneeded tab. Mute your phone. A notification mid-answer is memorable for the wrong reasons.",
         "If audio or video drops, say so immediately and calmly. How you handle it matters."
       ],
@@ -629,11 +629,6 @@ const DATA = {
         {
           title: "Body Language in Job Interviews",
           url: "https://www.youtube.com/watch?v=PCWVi5pAa30",
-          source: "Recommended by RODS Employment Readiness Program"
-        },
-        {
-          title: "Succeeding in the Job Interview",
-          url: "https://www.youtube.com/watch?v=0rntPudFPGM",
           source: "Recommended by RODS Employment Readiness Program"
         }
       ]
@@ -643,7 +638,7 @@ const DATA = {
       source: "Process reflects UofR CESL Career Connect match system.",
       steps: [
         {
-          title: "Write a thank you email — yourself",
+          title: "Write a thank you email",
           detail: "Send a brief thank you within 24 hours. Write it yourself, in your own words, personalized to the specific conversation. Mention one thing you discussed. Do not use AI — a generic AI thank you is worse than no thank you at all. One short paragraph is enough."
         },
         {

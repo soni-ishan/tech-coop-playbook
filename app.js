@@ -234,7 +234,7 @@ function buildInterview() {
   const iv = DATA.interview;
   const tabs = [
     { key: "how",   label: "How It Works" },
-    { key: "stars", label: "STARS Method" },
+    { key: "stars", label: "STAR Method" },
     { key: "qa",    label: "Common Q&A" },
     { key: "ask",   label: "Questions to Ask" },
     { key: "body",  label: "Body Language" },
@@ -320,10 +320,12 @@ function buildIvHow(iv) {
     ).join("")}</tbody>`;
   wrap.appendChild(table);
 
-  const ftf = document.createElement("div");
-  ftf.className = "from-the-field";
-  ftf.innerHTML = `<span class="ftf-label">From the Field</span> ${escapeHtml(iv.howItWorks.ftf)}`;
-  wrap.appendChild(ftf);
+  if (iv.howItWorks.ftf) {
+    const ftf = document.createElement("div");
+    ftf.className = "from-the-field";
+    ftf.innerHTML = `<span class="ftf-label">From the Field</span> ${escapeHtml(iv.howItWorks.ftf)}`;
+    wrap.appendChild(ftf);
+  }
 
   const rulesTitle = document.createElement("h3");
   rulesTitle.className = "iv-section-title";
@@ -373,7 +375,13 @@ function buildIvStars(iv) {
   const ex = iv.stars.example;
   const exBox = document.createElement("div");
   exBox.className = "stars-example";
-  ["situation", "task", "action", "result", "skills"].forEach(key => {
+  if (ex.question) {
+    const qRow = document.createElement("div");
+    qRow.className = "stars-example-row stars-example-question";
+    qRow.innerHTML = `<span class="stars-example-label">Question</span><span class="stars-example-text" style="font-style:italic">${escapeHtml(ex.question)}</span>`;
+    exBox.appendChild(qRow);
+  }
+  ["situation", "task", "action", "result"].forEach(key => {
     const row = document.createElement("div");
     row.className = "stars-example-row";
     row.innerHTML = `<span class="stars-example-label">${key.charAt(0).toUpperCase() + key.slice(1)}</span><span class="stars-example-text">${escapeHtml(ex[key])}</span>`;

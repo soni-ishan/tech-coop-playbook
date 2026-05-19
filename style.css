@@ -867,12 +867,16 @@ footer {
 /* STARS grid */
 .stars-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin-bottom: 28px;
 }
 
 @media (max-width: 700px) {
+  .stars-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 440px) {
   .stars-grid { grid-template-columns: 1fr; }
 }
 
@@ -924,6 +928,8 @@ footer {
 }
 
 .stars-example-row:last-child { border-bottom: none; }
+
+.stars-example-question .stars-example-label { color: var(--color-muted); }
 
 .stars-example-label {
   font-weight: 700;
