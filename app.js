@@ -244,7 +244,7 @@ function buildInterview() {
   const panels = document.getElementById("iv-tab-panels");
   if (!tabNav || !panels) return;
 
-  // Stats block — always visible, above tabs
+  // Stats block - always visible, above tabs
   const statsBlock = document.createElement("div");
   statsBlock.className = "iv-stats-block";
   const statsTitle = document.createElement("h3");
