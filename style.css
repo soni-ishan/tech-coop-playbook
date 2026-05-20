@@ -1209,6 +1209,11 @@ footer {
 
 .footer-author-links a:hover { color: #e2e8f0; }
 
+/* ── INTERVIEW STATS (always visible) ─── */
+.iv-stats-block {
+  margin-bottom: 28px;
+}
+
 /* ── STAT TABLE SCROLL WRAP ────────────── */
 .stat-table-wrap {
   overflow-x: auto;

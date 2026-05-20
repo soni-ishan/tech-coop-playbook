@@ -244,6 +244,26 @@ function buildInterview() {
   const panels = document.getElementById("iv-tab-panels");
   if (!tabNav || !panels) return;
 
+  // Stats block — always visible, above tabs
+  const statsBlock = document.createElement("div");
+  statsBlock.className = "iv-stats-block";
+  const statsTitle = document.createElement("h3");
+  statsTitle.className = "iv-section-title";
+  statsTitle.textContent = "My Application Stats — From the Field";
+  statsBlock.appendChild(statsTitle);
+  const tableWrap = document.createElement("div");
+  tableWrap.className = "stat-table-wrap";
+  const table = document.createElement("table");
+  table.className = "stat-table";
+  table.innerHTML = `
+    <thead><tr><th>Term</th><th>Apps&nbsp;Sent</th><th>Interviews</th><th>Result</th></tr></thead>
+    <tbody>${iv.howItWorks.stats.map(r =>
+      `<tr><td>${escapeHtml(r.term)}</td><td>${escapeHtml(r.apps)}</td><td>${escapeHtml(r.interviews)}</td><td>${escapeHtml(r.result)}</td></tr>`
+    ).join("")}</tbody>`;
+  tableWrap.appendChild(table);
+  statsBlock.appendChild(tableWrap);
+  tabNav.insertAdjacentElement("beforebegin", statsBlock);
+
   tabs.forEach((tab, idx) => {
     const btn = document.createElement("button");
     btn.className = "tab-btn" + (idx === 0 ? " active" : "");
@@ -305,22 +325,6 @@ function buildIvHow(iv) {
   });
   wrap.appendChild(tl);
 
-  const statsTitle = document.createElement("h3");
-  statsTitle.className = "iv-section-title";
-  statsTitle.textContent = "My Application Stats - From the Field";
-  wrap.appendChild(statsTitle);
-
-  const tableWrap = document.createElement("div");
-  tableWrap.className = "stat-table-wrap";
-  const table = document.createElement("table");
-  table.className = "stat-table";
-  table.innerHTML = `
-    <thead><tr><th>Term</th><th>Apps&nbsp;Sent</th><th>Interviews</th><th>Result</th></tr></thead>
-    <tbody>${iv.howItWorks.stats.map(r =>
-      `<tr><td>${escapeHtml(r.term)}</td><td>${escapeHtml(r.apps)}</td><td>${escapeHtml(r.interviews)}</td><td>${escapeHtml(r.result)}</td></tr>`
-    ).join("")}</tbody>`;
-  tableWrap.appendChild(table);
-  wrap.appendChild(tableWrap);
 
   if (iv.howItWorks.ftf) {
     const ftf = document.createElement("div");
