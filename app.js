@@ -307,13 +307,13 @@ function buildIvHow(iv) {
 
   const statsTitle = document.createElement("h3");
   statsTitle.className = "iv-section-title";
-  statsTitle.textContent = "Application Stats - From the Field";
+  statsTitle.textContent = "My Application Stats - From the Field";
   wrap.appendChild(statsTitle);
 
   const table = document.createElement("table");
   table.className = "stat-table";
   table.innerHTML = `
-    <thead><tr><th>Term</th><th>Apps Sent</th><th>Interviews</th><th>Result</th></tr></thead>
+    <thead><tr><th>Term</th><th>Apps&nbsp;Sent</th><th>Interviews</th><th>Result</th></tr></thead>
     <tbody>${iv.howItWorks.stats.map(r =>
       `<tr><td>${escapeHtml(r.term)}</td><td>${escapeHtml(r.apps)}</td><td>${escapeHtml(r.interviews)}</td><td>${escapeHtml(r.result)}</td></tr>`
     ).join("")}</tbody>`;

@@ -386,9 +386,9 @@ const DATA = {
         }
       ],
       stats: [
-        { term: "Terms 1-2: GoS (double term)", apps: "40-50", interviews: "2-3", result: "Matched #1 in two interviews" },
-        { term: "Term 3: SaskEnergy", apps: "10-12", interviews: "1", result: "Matched #1 at SEI" },
-        { term: "Term 4: SaskTel", apps: "4-5", interviews: "2", result: "Ranked #1 & #2 at different teams in SaskTel" }
+        { term: "Terms 1-2 (Fall 2023 - Winter 2024): GoS (double term)", apps: "50 - 60", interviews: "2", result: "Two interviews, two offers - accepted GoS; also matched for CS lab instructor at UofR" },
+        { term: "Term 3 (Summer 2024): SaskEnergy", apps: "17", interviews: "1", result: "Ranked and Matched #1 at SaskEnergy" },
+        { term: "Term 4 (Summer 2025): SaskTel", apps: "16", interviews: "2", result: "Ranked #1 & #2 at different teams in SaskTel" }
       ],
       ftf: null,
       rules: [
