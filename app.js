@@ -249,7 +249,7 @@ function buildInterview() {
   statsBlock.className = "iv-stats-block";
   const statsTitle = document.createElement("h3");
   statsTitle.className = "iv-section-title";
-  statsTitle.textContent = "My Application Stats — From the Field";
+  statsTitle.textContent = "My Application Stats - From the Field";
   statsBlock.appendChild(statsTitle);
   const tableWrap = document.createElement("div");
   tableWrap.className = "stat-table-wrap";
