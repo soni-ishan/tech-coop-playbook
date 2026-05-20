@@ -300,7 +300,7 @@ section:nth-child(even) { background: var(--color-bg-alt); }
 .bullet-guide-heading {
   font-weight: 700;
   font-size: 1rem;
-  color: var(--color-text);
+  color: #e2e8f0;
   margin: 0 0 10px;
 }
 .bullet-guide p { margin: 0 0 16px; font-size: .9rem; color: var(--color-muted); }
@@ -1208,3 +1208,58 @@ footer {
 }
 
 .footer-author-links a:hover { color: #e2e8f0; }
+
+/* ── STAT TABLE SCROLL WRAP ────────────── */
+.stat-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.stat-table-wrap .stat-table { margin-bottom: 0; }
+
+/* ── MOBILE ────────────────────────────── */
+@media (max-width: 600px) {
+  /* Nav */
+  .nav-inner {
+    height: auto;
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .nav-brand { font-size: .88rem; }
+  .nav-brand img { width: 26px; height: 26px; }
+  .nav-links { gap: 2px; }
+  .nav-links a { font-size: .8rem; padding: 5px 8px; }
+
+  /* Spacing */
+  section { padding: 36px 0; }
+  .container { padding: 0 16px; }
+  #hero { padding: 36px 0 28px; }
+
+  /* Hero */
+  .hero-desc { font-size: .95rem; }
+  .hero-warning { font-size: .78rem; }
+  .hero-byline { font-size: .78rem; }
+
+  /* Section headings */
+  .section-title { font-size: 1.4rem; }
+
+  /* Template preview — smaller mono text */
+  .template-preview { font-size: .66rem; }
+
+  /* Bullet guide */
+  .bullet-guide { padding: 14px 16px; }
+
+  /* Linter */
+  .linter-item { gap: 8px; padding: 10px 12px; }
+
+  /* Accordion */
+  .accordion-header { padding: 12px 14px; }
+
+  /* Interview STAR grid already handles 700/440px */
+
+  /* Footer */
+  footer { padding: 36px 0; }
+  .footer-inner { padding: 0 16px; }
+}

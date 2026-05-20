@@ -310,6 +310,8 @@ function buildIvHow(iv) {
   statsTitle.textContent = "My Application Stats - From the Field";
   wrap.appendChild(statsTitle);
 
+  const tableWrap = document.createElement("div");
+  tableWrap.className = "stat-table-wrap";
   const table = document.createElement("table");
   table.className = "stat-table";
   table.innerHTML = `
@@ -317,7 +319,8 @@ function buildIvHow(iv) {
     <tbody>${iv.howItWorks.stats.map(r =>
       `<tr><td>${escapeHtml(r.term)}</td><td>${escapeHtml(r.apps)}</td><td>${escapeHtml(r.interviews)}</td><td>${escapeHtml(r.result)}</td></tr>`
     ).join("")}</tbody>`;
-  wrap.appendChild(table);
+  tableWrap.appendChild(table);
+  wrap.appendChild(tableWrap);
 
   if (iv.howItWorks.ftf) {
     const ftf = document.createElement("div");
