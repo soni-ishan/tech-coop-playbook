@@ -228,14 +228,13 @@ section:nth-child(even) { background: var(--color-bg-alt); }
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: 12px;
+  border-top: 3px solid var(--color-primary);
   padding: 28px;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
-.template-card:first-child { border-top: 3px solid var(--color-primary); }
 
 .template-badge {
   font-size: .7rem;
