@@ -172,6 +172,14 @@ section:nth-child(even) { background: var(--color-bg-alt); }
 
 .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 
+.hero-byline {
+  margin-top: 20px;
+  font-size: .82rem;
+  color: var(--color-muted);
+}
+.hero-byline a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.hero-byline a:hover { color: var(--color-text); }
+
 /* ── BUTTONS ───────────────────────────── */
 .btn {
   display: inline-flex;
