@@ -743,6 +743,10 @@ footer {
   font-size: .78rem;
   color: #475569;
 }
+.footer-note {
+  color: #64748b;
+  font-style: italic;
+}
 
 /* ── UTILITIES ─────────────────────────── */
 .sr-only {
