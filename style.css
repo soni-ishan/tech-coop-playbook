@@ -73,13 +73,14 @@ body {
 }
 
 .nav-links a {
-  font-size: .875rem;
+  font-size: .95rem;
   font-weight: 500;
   color: var(--color-muted);
   text-decoration: none;
   padding: 6px 12px;
   border-radius: 6px;
-  transition: color .15s, background .15s;
+  border-bottom: 2px solid transparent;
+  transition: color .15s, background .15s, border-color .15s;
 }
 
 .nav-links a:hover {
@@ -1167,7 +1168,10 @@ footer {
 }
 
 /* Active nav link */
-.nav-links a.active { color: var(--color-primary); }
+.nav-links a.active {
+  color: var(--color-text);
+  border-bottom-color: var(--color-primary);
+}
 
 /* Footer author section */
 .footer-author {

@@ -559,18 +559,37 @@ function initNavHighlight() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-links a");
 
+  const sectionToNav = {
+    templates: "#templates",
+    bullets:   "#templates",
+    linter:    "#templates",
+    interview: "#interview",
+    prompts:   "#prompts",
+  };
+
   const obs = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const id = entry.target.id;
+        const navHref = sectionToNav[entry.target.id];
+        if (!navHref) return;
         navLinks.forEach(a => {
-          a.classList.toggle("active", a.getAttribute("href") === "#" + id);
+          a.classList.toggle("active", a.getAttribute("href") === navHref);
         });
       }
     });
   }, { rootMargin: "-30% 0px -60% 0px" });
 
   sections.forEach(s => obs.observe(s));
+
+  const footer = document.querySelector("footer");
+  if (footer) {
+    const footerObs = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        navLinks.forEach(a => a.classList.remove("active"));
+      }
+    }, { threshold: 0.1 });
+    footerObs.observe(footer);
+  }
 }
 
 // ── UTILITIES ─────────────────────────────────────────────────────
