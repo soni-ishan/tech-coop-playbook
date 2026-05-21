@@ -411,7 +411,7 @@ const DATA = {
         title: "Worked Example: DC Power Outage Visualizer (SaskTel)",
         question: "What was your last employer's opinion of you?",
         situation: "I completed a co-op term at SaskTel's Core Network department, working on DC power automation initiatives under my manager.",
-        task: "The goal was to from a high-level concepts to a functional engineering tool, which required a high degree of technical independence and clear communication.",
+        task: "The goal was to go from a high-level concept to a functional engineering tool, which required a high degree of technical independence and clear communication.",
         action: "I took full ownership of developing a DC Power Outage Visualizer from the ground up. I stayed communicative throughout, asking thoughtful questions while integrating feedback into each iteration. My manager noted I required very little day-to-day supervision despite the complexity.",
         result: "My final evaluation rated my performance 'Exceeds Expectations' and my technical work 'Exceptional'. My manager described me as a 'great asset' and 'extremely impressive', specifically noting my ability to turn a vague idea into a functioning tool that gave the department insights they previously didn't have access to."
       },
